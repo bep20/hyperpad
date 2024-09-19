@@ -1,0 +1,26 @@
+.connectionTypeContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  .connectionTypeItem {
+    .connectionTypeItemButton {
+      width: 100%;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      height: 3rem;
+
+      //   background-color: var(--alert-info-bg-color);
+      color: var(--active-menu-item-text);
+      border-color: var(--active-menu-item-text);
+      &:hover:not(:disabled) {
+        border-color: var(--active-menu-item-text) !important;
+        color: var(--active-menu-item-text) !important;
+      }
+    }
+  }
+  .activeNetwork {
+    button {
+      background-color: var(--red-button-bg-color);
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.layoutContainer {
+  height: 100%;
+  .layoutHeader {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    height: var(--header-height);
+    z-index: 100;
+    width: 100%;
+    padding: 0px 16px;
+    top: -1px;
+  }
+  .layoutWrap {
+    display: flex;
+    flex-direction: row;
+    .layoutBox {
+      padding: 0 24px 24px;
+      height: 100%;
+      overflow: scroll;
+      .layoutContent {
+        padding: 24px;
+        margin: 0px;
+        min-height: 280px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .layoutContainer {
+    height: 100%;
+    .layoutWrap {
+      .layoutBox {
+        padding: 0px;
+        .layoutContent {
+          padding: 12px;
+          font-size: 1rem;
+          // display: flex;
+          // flex-direction: row;
+        }
+      }
+    }
+  }
+}
