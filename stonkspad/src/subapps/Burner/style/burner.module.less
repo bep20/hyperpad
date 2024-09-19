@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-background-color);
+  border: 1px solid var(--main-border-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+
+  .burnTitle {
+    .purpleText {
+      color: #9800ee;
+    }
+    letter-spacing: 1.5px;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color: #000;
+    text-align: left;
+  }
+  .headerLine {
+    border-bottom: 2px solid gray;
+    margin-bottom: 2rem;
+  }
+  .autoCompleteLoadContainer {
+    display: flex;
+    column-gap: 3rem;
+    .autoCompleteLoad {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+      flex: 6;
+      .tokenLoad {
+        display: flex;
+        column-gap: 2rem;
+      }
+      .burnCardInfo {
+        flex: 6;
+        background: #dacaff;
+      }
+    }
+    .burnCardsWrap {
+      flex: 4;
+      .burnCards {
+        display: flex;
+        column-gap: 3rem;
+
+        .burnCardAction {
+          flex: 4;
+          background: #dacaff;
+          .burnCardActionContent {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+            justify-content: space-between;
+
+            .burnCardActionInputCt {
+              display: flex;
+              column-gap: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.infoRowContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  flex: 1;
+  justify-content: space-evenly;
+  row-gap: 0.5rem;
+}
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+.btext {
+  font-weight: 500;
+}
+
+.optionToken {
+  display: flex;
+  align-items: center;
+  .optionTokenSymbol {
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin: 0px;
+  }
+  .optionTokenAddress {
+    font-family: 'Outfit';
+    font-weight: 300;
+    font-size: 0.6rem;
+    margin: 0px;
+  }
+  .optionTokenImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    .autoCompleteLoadContainer {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3rem;
+    }
+  }
+  .container {
+    .burnCards {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

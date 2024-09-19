@@ -1,0 +1,78 @@
+@keyframes dash {
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+
+.graphView {
+  @apply relative flex items-center justify-center h-[calc(100vh-70px)] m-[-24px] lg:m-[-12px] overflow-hidden bg-main-background-color;
+
+  & #svg {
+    @apply cursor-move h-[100%] w-[100%] bg-[#0e051a];
+    & circle {
+      fill-opacity: 0.2;
+      @apply cursor-pointer stroke-[1.5px];
+      &.node-selected {
+        fill-opacity: 0.8;
+        @apply stroke-white stroke-[4px];
+      }
+      &:hover {
+        fill-opacity: 0.8;
+        @apply stroke-white;
+      }
+    }
+    & line {
+      stroke-opacity: 0.6;
+      @apply stroke-white pointer-events-none stroke-[1px];
+      &.--selected {
+        stroke-opacity: 1;
+        @apply stroke-[1.5px];
+      }
+      &.--forward,
+      &.--backward {
+        stroke-dasharray: 4;
+        animation: dash 15s linear infinite;
+
+        &.--forward {
+          animation-direction: reverse;
+        }
+      }
+    }
+
+    & path {
+      fill-opacity: 0.2;
+      @apply cursor-pointer stroke-[1.5px];
+      &:hover {
+        fill-opacity: 0.3;
+        @apply stroke-white;
+      }
+    }
+  }
+  & .floatingPanel {
+    transition: all 0.4s;
+    @apply shadow-[-4px_4px_12px_0px_rgba(0,0,0,0.08)] flex flex-col gap-y-[10px] py-[10px]
+        bg-white w-[300px] h-[calc(100vh-83px)] rounded-[4px] absolute top-[7px]
+        right-[7px] z-[1];
+
+    &.collapsed {
+      @apply w-[120px] h-[40px] flex items-start justify-center cursor-pointer;
+    }
+    & .header {
+      @apply flex items-center justify-between px-[10px];
+    }
+    & .rows {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+      @apply overflow-y-auto;
+      & .row {
+        @apply flex justify-between p-[10px] gap-x-4;
+      }
+    }
+    & .tabs {
+      @apply mx-auto px-[10px];
+    }
+  }
+}

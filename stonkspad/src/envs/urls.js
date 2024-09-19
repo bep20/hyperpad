@@ -1,0 +1,11 @@
+export const { SOLANA_MAINNET_URL } = process.env;
+export const { SOLANA_MAINNET_SECONDARY_URL } = process.env;
+export const { SOLANA_DEVNET_URL } = process.env;
+export const { SOLANA_DEVNET_SECONDARY_URL } = process.env;
+export const { SOLANA_TESTNET } = process.env;
+export const { IRYS_DEVNET } = process.env;
+export const { IRYS_MAINNET } = process.env;
+export const { IRYS_TESTNET } = process.env;
+export const { BACKEND_DEV_URL } = process.env;
+export const { BACKEND_PROD_URL } = process.env;
+export const { BARE_METAL_BACKEND_URL } = process.env;

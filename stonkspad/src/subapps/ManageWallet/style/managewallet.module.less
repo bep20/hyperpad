@@ -1,0 +1,207 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: var(--main-background-color);
+    border: 1px solid var(--main-border-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+  
+    .formContainer {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 1rem;
+      .formTitle {
+        .pupleText {
+          color: #9800ee;
+        }
+        letter-spacing: 1.5px;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        color: #000;
+        //   text-decoration: underline;
+      }
+      .walletformcontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      .fieldContainer {
+        width: 45%;
+        margin-bottom: 20px;
+      }
+  
+      .fieldLabel {
+        font-size: 1rem;
+        padding-bottom: 0.3rem;
+        padding-top: 1rem;
+        font-weight: 400;
+        margin: 0;
+      }
+  
+      .imageIcon {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .inputnumbertag {
+        display: flex;
+        align-items: center;
+        padding: 0;
+      }
+      .inputnumbertag .ant-input {
+        border: none;
+  
+        outline: none;
+        box-shadow: none;
+        text-align: left;
+        padding-left: 1opx;
+      }
+  
+      .imageIcon {
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+  
+      .downloadButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+  
+        align-items: center;
+        gap: 20px;
+      }
+  
+      .actionButtonContainer {
+        margin-top: 1rem;
+        // margin-bottom: 3rem;
+        width: 25%;
+        .createTokenButton {
+          width: 100%;
+          font-size: 1.5rem;
+          height: 3rem;
+        }
+      }
+  
+      .tokenTypeContainer {
+        margin-block: 2rem;
+        .title {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+    .headerLine {
+      border-bottom: 2px solid gray;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      //   border: 1px solid red;
+    }
+  
+    .manageTitle {
+      letter-spacing: 1.5px;
+      margin-bottom: 2rem;
+      color: #000;
+      text-decoration: underline;
+    }
+  
+    .manageList {
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      row-gap: 6rem;
+      column-gap: 6rem;
+  
+      .manageCard {
+        border: 1px solid var(--main-border-color);
+        border-radius: 0.25rem;
+        box-shadow: -6px 6px #000;
+        border: 1px solid #000;
+        transition:
+          transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+          box-shadow 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        &:hover {
+          box-shadow: -4px 4px #000;
+        }
+        .manageCardContent {
+          display: flex;
+          flex-direction: column;
+          row-gap: 0.3rem;
+          p {
+            margin: 0px;
+          }
+          display: flex;
+          flex-direction: column;
+          row-gap: 0.5rem;
+  
+          .manageCardRow {
+            display: flex;
+            justify-content: space-between;
+          }
+          .manageCardDetails {
+            display: flex;
+            justify-content: center;
+            a {
+              color: #9800ee;
+              border: 1px solid;
+              width: 100%;
+              text-align: center;
+              padding-block: 0.5rem;
+              border-radius: 0.3rem;
+              &:hover {
+                opacity: 0.6;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .detailsTitle {
+      letter-spacing: 1.5px;
+      margin-bottom: 2rem;
+      color: #000;
+      text-decoration: underline;
+    }
+    .detailsContent {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4rem;
+      width: 90%;
+      .detailsCardItemContent {
+        display: flex;
+        justify-content: space-between;
+        .detailsCardItemGroup {
+          width: 30%;
+          padding-right: 3rem;
+          p {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+      .holdersTitle {
+        letter-spacing: 1.5px;
+        margin-bottom: 2rem;
+        color: #000;
+        text-decoration: underline;
+      }
+      .detailsTableContent {
+        // table style
+      }
+    }
+  }
+  @media only screen and (max-width: 1023px) {
+    .container {
+      .formContainer {
+        width: 100%;
+      }
+    }
+  }
+  

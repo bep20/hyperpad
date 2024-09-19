@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "address": "4Y99jNqfF76djP9qGQitW6vaGybdy6BGC8Jjac9b4iW6",
+      "owner": "DMZCmX8Z3pPz7qaNwR86tbMGnEW5SfErXD7ZrU1ikcHd",
+      "peripheralId": 1
+    },
+    {
+      "address": "8v1SY9abwLW9Y4ujeRgpBxQDgvHYQgT4XzHxj2ERbmJd",
+      "owner": "7Nrzqo3wmcHscJ96ZMKWhc88Xfr5iBvEsQfvwzp1mvwB",
+      "peripheralId": 1
+    },
+    {
+      "address": "8v1SY9abwLW9Y4ujeRgpBxQDgvHYQgT4XzHxj2ERbmJd",
+      "owner": "7Nrzqo3wmcHscJ96ZMKWhc88Xfr5iBvEsQfvwzp1mvwB",
+      "peripheralId": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "GCyMscJNNUCRxoojnqouegyaXJrNcChSGHe9yFALTc9F",
+      "target": "MyZAAnnFjeVbFR1kvHKFoPP818x5La8sXN3fRwLU66z"
+    },
+    {
+      "source": "DpAu5hfgMSJA5zh3aECAf7enePFjXdkeituzCR3hCzck",
+      "target": "BxfbPma6PRPC5vwjMheQPNbvsVnkT8BjzbTcnerwV2QK"
+    }
+  ]
+}

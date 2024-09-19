@@ -1,0 +1,192 @@
+.minFormTitle {
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #000;
+  text-align: left;
+
+  .highlighText {
+    color: var(--red-button-text-color);
+  }
+}
+.headerLine {
+  border-bottom: 2px solid gray;
+  margin-bottom: 1.5rem;
+}
+
+// Display Token css
+.tokensConatiner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-around;
+  .tokenItem {
+    width: 200px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    .tokenCard {
+      cursor: pointer;
+      background: var(--main-background-color);
+      color: var(--main-text-color);
+      border: 1px solid var(--main-border-color);
+      border-radius: 1.25rem;
+      box-shadow:
+        0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+        0 0 0 1px rgba(10, 10, 10, 0.02);
+      color: #4a4a4a;
+      max-width: 100%;
+      position: relative;
+
+      .tokenCardContent {
+        box-sizing: border-box;
+        padding: 0.5rem;
+        background-color: transparent;
+        row-gap: 0rem;
+        display: flex;
+        flex-direction: column;
+        .mainDetails {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          .mediaSection {
+            width: 120px;
+            height: 120px;
+            // border: 1px solid rgba(249, 81, 146, 0.2);
+            img {
+              width: 120px;
+              height: 120px;
+              border-radius: 50%;
+              // border: 2px solid rgba(249, 81, 146, 0.2);
+            }
+          }
+          .textSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-left: 1.5rem;
+            .cardTitle {
+              font-size: 22px;
+              font-weight: 600;
+              margin: 0;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              max-width: 250px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+            .cardDescription {
+              font-size: 15px;
+              font-weight: 600;
+              color: #888;
+              margin: 0 !important;
+            }
+          }
+        }
+        .metaDetails {
+          display: flex;
+          flex-direction: column;
+          padding-top: 0.2rem;
+          padding-bottom: 0rem;
+          text-align: center;
+          .metaDetailsItem {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            p {
+              margin: 0px;
+              max-width: 150px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.tokenSearchContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  .searchContainer {
+    display: flex;
+    column-gap: 3rem;
+  }
+  .inputTokenSearch {
+    // border: 1px solid var(--red-button-text-color);
+    box-shadow: none;
+    max-width: 300px;
+    &:hover {
+      // border: 0px;
+      box-shadow: 0 0 0 1px var(--active-menu-item-text);
+      border: 1px solid transparent;
+    }
+    &:active {
+      // border: 0px;
+      box-shadow: 0 0 0 1px var(--active-menu-item-text);
+      border: 1px solid transparent;
+    }
+    &:focus {
+      // border: 0px;
+      box-shadow: 0 0 0 1px var(--active-menu-item-text);
+      border: 1px solid transparent;
+    }
+  }
+}
+.tokenSearchContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+}
+.tokenPageTitleConatiner {
+  .tokenPageTitle {
+    color: var(--red-button-text-color);
+    margin-left: 2rem;
+  }
+}
+
+.incineratorContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-background-color);
+  border: 1px solid var(--main-border-color);
+  row-gap: 3rem;
+  padding: 1rem;
+}
+.myTokensPageContainer {
+  display: flex;
+  flex-direction: column;
+  //   background-color: var(--main-background-color);
+  //   border: 1px solid var(--main-border-color);
+  //   border-radius: 5px;
+  //   padding: 1rem;
+}
+@media only screen and (max-width: 1000px) {
+  .myTokensPageContainer {
+    // margin: auto;
+  }
+}
+
+// .updateInfoButton {
+//   width: 100%;
+// }
+@media only screen and (max-width: 1000px) {
+  .tokensConatiner {
+    .tokenItem {
+      width: 100%;
+    }
+    .textSection {
+      padding: 0.5rem !important;
+      .cardTitle {
+        font-size: 14px !important;
+        max-width: 100px !important;
+      }
+    }
+  }
+}

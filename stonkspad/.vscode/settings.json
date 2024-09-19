@@ -1,0 +1,41 @@
+{
+    "editor.linkedEditing": true,
+    "git.autofetch": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.suggest.insertMode": "replace",
+        "editor.formatOnType": true
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "files.autoSave": "afterDelay",
+    "workbench.editor.wrapTabs": false,
+    "errorLens.onSave": true,
+    "git.confirmSync": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.formatOnSave": true,
+    "workbench.startupEditor": "none",
+    "explorer.confirmDelete": false,
+    "editor.inlineSuggest.enabled": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "django-html": "html",
+        "jinja-html": "html"
+    },
+    "eslint.workingDirectories": [
+        {
+            "directory": "../src",
+            "changeProcessCWD": true
+        }
+    ],
+    "workbench.editor.enablePreview": false
+}

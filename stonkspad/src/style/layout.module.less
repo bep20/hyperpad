@@ -1,0 +1,45 @@
+.layoutBox {
+  .layoutContent {
+    padding: 24px;
+    margin: 0px;
+    min-height: 280px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .layoutContainer {
+    height: 100%;
+    .layoutWrap {
+      .layoutBox {
+        padding: 0px;
+        .layoutContent {
+          padding: 12px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.connectWalletConatiner {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  // border: 1px solid var(--main-border-color);
+  // border-radius: 10px;
+  // padding: 1.5rem;
+  h1 {
+    color: var(--red-button-text-color);
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .connectWalletConatiner {
+    width: 100%;
+  }
+}
