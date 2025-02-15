@@ -188,7 +188,7 @@ module.exports = function (_env, argv) {
         ],
       }),
       new SitemapPlugin({
-        base: 'https://app.hypersol.xyz',
+        base: 'https://hypersol.vercel.app',
         paths: sitePaths,
         options: {
           changefreq: 'hourly',
